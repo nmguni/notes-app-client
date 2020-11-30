@@ -18,7 +18,8 @@ export default makeStyles((theme) => ({
   form__title: {
     color: "#444444",
     fontSize: "1.75rem",
-    letterSpacing: ".1em",
+    letterSpacing: ".85px",
+    fontWeight: "600",
   },
   fileInput: {
     width: "97%",
@@ -26,10 +27,19 @@ export default makeStyles((theme) => ({
   },
 
   button__submit: {
-    marginBottom: 10,
-    letterSpacing: ".1em",
+    letterSpacing: ".85px",
+    textTransform: "capitalize",
+    margin: "0 5px",
   },
   button__clear: {
-    letterSpacing: ".1em",
+    letterSpacing: ".85px",
+    textTransform: "capitalize",
+    margin: "0 5px",
+  },
+  form__buttons: {
+    display: "flex",
+    flexDirection: " row",
+    justifyContent: "space-around",
+    width: "300px",
   },
 }));

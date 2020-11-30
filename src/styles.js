@@ -8,14 +8,16 @@ export default makeStyles(() => ({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#ffffffa8",
+    backgroundColor: "#ffffff00",
     borderRadius: "4px",
   },
   heading: {
     color: "#444444",
-    letterSpacing: ".1em",
+    letterSpacing: ".95px",
+    borderBottom: "solid 5.5px #FFEE58",
+    width: "325px",
   },
-  heading__letter__color: {
-    color: "#2EBE60",
-  },
+  // heading__letter__color: {
+  //   color: "#2EBE60",
+  // },
 }));

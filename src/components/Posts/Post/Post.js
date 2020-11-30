@@ -50,24 +50,26 @@ const Post = ({ post, setCurrentId }) => {
           </Button>
         </Tooltip>
       </div>
+
+      <Typography className={classes.title} variant="h5" component="h2">
+        {post.title}
+      </Typography>
+
+      <CardContent className={classes.card__content}>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {post.message}
+        </Typography>
+      </CardContent>
       <div className={classes.details}>
         <Typography
           className={classes.tags}
           variant="body2"
           color="textSecondary"
-          component="h2"
+          component="h4"
         >
           {post.tags.map((tag) => `#${tag} `)}
         </Typography>
       </div>
-      <Typography className={classes.title} variant="h5" component="h2">
-        {post.title}
-      </Typography>
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {post.message}
-        </Typography>
-      </CardContent>
       <CardActions className={classes.cardActions}>
         <Button
           size="small"

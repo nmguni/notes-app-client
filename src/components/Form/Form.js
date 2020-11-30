@@ -109,28 +109,30 @@ const Form = ({ currentId, setCurrentId }) => {
             }
           />
         </div>
-        <Button
-          className={classes.button__submit}
-          variant="contained"
-          style={{ backgroundColor: "#364F6B" }}
-          size="large"
-          color="secondary"
-          type="submit"
-          fullWidth
-        >
-          Submit
-        </Button>
-        <Button
-          className={classes.button__clear}
-          style={{ backgroundColor: "#FF304F" }}
-          variant="contained"
-          color="secondary"
-          size="small"
-          onClick={clear}
-          fullWidth
-        >
-          Clear
-        </Button>
+        <div className={classes.form__buttons}>
+          <Button
+            className={classes.button__submit}
+            variant="contained"
+            style={{ backgroundColor: "#364F6B" }}
+            size="large"
+            color="secondary"
+            type="submit"
+            fullWidth
+          >
+            Submit
+          </Button>
+          <Button
+            className={classes.button__clear}
+            style={{ backgroundColor: "#d50000" }}
+            variant="contained"
+            color="secondary"
+            size="large"
+            onClick={clear}
+            fullWidth
+          >
+            Clear
+          </Button>
+        </div>
       </form>
     </Paper>
   );

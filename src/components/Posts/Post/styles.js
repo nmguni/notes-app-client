@@ -42,30 +42,38 @@ export default makeStyles({
   details: {
     display: "flex",
     justifyContent: "space-between",
-    margin: "20px",
+    padding: " 5px 10px",
     backgroundColor: "ffffffa8 !important",
   },
   time__stamp: {
     color: "#FFFFFF8F",
   },
   title: {
-    padding: "0 16px",
     textTransform: "capitalize",
-    letterSpacing: "2px",
+    letterSpacing: ".85px",
+    fontWeight: "600",
+    padding: " 5px 10px",
   },
 
+  card__content: {
+    padding: " 5px 10px",
+  },
   cardActions: {
     padding: "0 16px 8px 16px",
     display: "flex",
     justifyContent: "space-between",
   },
   delete__icon: {
-    color: "#FF304F",
+    color: "#d50000",
+    textTransform: "capitalize",
   },
   like__icon: {
     color: "#364F6B",
+    textTransform: "capitalize",
   },
   tags: {
-    letterSpacing: "2px",
+    letterSpacing: ".85px",
+    margin: "0px",
+    fontSize: "12px",
   },
 });
